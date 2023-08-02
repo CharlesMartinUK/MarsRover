@@ -10,41 +10,18 @@ export class Rover {
 	}
 	
 	rotateLeft(){
+		const swap = {"N":"W", "W": "S", "S":"E", "E":"N" }
 		
-		switch(this.direction) {
-			case "N":
-				this.direction = "W"
-				break
-			case "W":
-				this.direction = "S"
-				break
-			case "S":
-				this.direction = "E"
-				break
-			case "E":
-				this.direction = "N"
-				break
-		}
-		
+		this.direction = swap[this.direction]
+				
 		return this.direction
 	}
 	
 	rotateRight(){
 		
-		switch(this.direction) {
-			case "N":
-				this.direction = "E"
-				break
-			case "E":
-				this.direction = "S"
-				break
-			case "S":
-				this.direction = "W"
-				break
-			case "W":
-				this.direction = "N"
-				break
-		}
+		const swap = {"N":"E", "E":"S", "S":"W", "W":"N"}
+		
+		this.direction = swap[this.direction]
 		
 		return this.direction
 	}

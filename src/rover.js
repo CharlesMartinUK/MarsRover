@@ -9,37 +9,13 @@ var Rover = /** @class */ (function () {
         this.direction = d;
     }
     Rover.prototype.rotateLeft = function () {
-        switch (this.direction) {
-            case "N":
-                this.direction = "W";
-                break;
-            case "W":
-                this.direction = "S";
-                break;
-            case "S":
-                this.direction = "E";
-                break;
-            case "E":
-                this.direction = "N";
-                break;
-        }
+        var swap = { "N": "W", "W": "S", "S": "E", "E": "N" };
+        this.direction = swap[this.direction];
         return this.direction;
     };
     Rover.prototype.rotateRight = function () {
-        switch (this.direction) {
-            case "N":
-                this.direction = "E";
-                break;
-            case "E":
-                this.direction = "S";
-                break;
-            case "S":
-                this.direction = "W";
-                break;
-            case "W":
-                this.direction = "N";
-                break;
-        }
+        var swap = { "N": "E", "E": "S", "S": "W", "W": "N" };
+        this.direction = swap[this.direction];
         return this.direction;
     };
     Rover.prototype.getDirection = function () {
