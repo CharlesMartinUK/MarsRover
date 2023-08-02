@@ -3,10 +3,10 @@ export class Rover {
 	y:number
 	direction:string
 	
-	constructor(x:number, y:number) {
+	constructor(x:number, y:number, d:string= "N") {
 		this.x = x
 		this.y = y
-		this.direction = "N"
+		this.direction = d
 	}
 	
 	rotateLeft(){

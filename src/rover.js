@@ -2,10 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Rover = void 0;
 var Rover = /** @class */ (function () {
-    function Rover(x, y) {
+    function Rover(x, y, d) {
+        if (d === void 0) { d = "N"; }
         this.x = x;
         this.y = y;
-        this.direction = "N";
+        this.direction = d;
     }
     Rover.prototype.rotateLeft = function () {
         switch (this.direction) {
