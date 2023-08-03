@@ -10,6 +10,7 @@ export class Rover {
 	}
 	
 	rotateLeft(){
+		
 		const swap = {"N":"W", "W": "S", "S":"E", "E":"N" }
 		
 		this.direction = swap[this.direction]
