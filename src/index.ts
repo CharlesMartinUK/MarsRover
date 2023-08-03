@@ -11,16 +11,15 @@ function main() {
 	
 	const platDim = input('Input width and height of Plateau (eg 5 5): ',"ii");
 	
-	while(true) { // loop for each rover
+	const plat = new Plateau(Number(platDim[0]), Number(platDim[1]) )
 	
-		const firstLine = input('input x y and inital direction (eg 1 2 N): ',"iid");
+	while(true) { // loop for each rover
+		console.log("*********** ROVER INPUT *************")
+		const firstLine = input('Input x y and inital direction (eg 1 2 N): ',"iid");
 		
-		let secondLine = prompt('movement directions (eg LMMRLLR): ',"s").toUpperCase();
+		let secondLine = prompt('Movement directions (eg LMMRLLR): ').toUpperCase();
 		
-		
-		const plat = new Plateau(Number(platDim[0]), Number(platDim[1]) )
 		const rover = new Rover( Number(firstLine[0]), Number(firstLine[1]), String(firstLine[2]) )
-		
 		
 		for(let c of secondLine) {
 			
@@ -52,10 +51,9 @@ function main() {
 					break
 			}
 			
-			
-			//printMap(rover.x, rover.y, plat.width, plat.height)
+			printMap(rover.x, rover.y, plat.width, plat.height)
 			console.log("CURRENT: Rover End Position and direction",rover.x," ", rover.y," ", rover.direction)
-			//sleep(1000)
+			sleep(1000)
 		}
 		console.log("Rover End Position and direction",rover.x," ", rover.y," ", rover.direction)
 	}
