@@ -1,16 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.doOneCommand = exports.executeInstructions = void 0;
-function executeInstructions(rover, plat, command, action) {
-    if (action === void 0) { action = null; }
-    for (var _i = 0, command_1 = command; _i < command_1.length; _i++) {
-        var c = command_1[_i];
-        doOneCommand(rover, plat, c);
-        if (action != null)
-            action();
-    }
-}
-exports.executeInstructions = executeInstructions;
+exports.executeInstructions = exports.doOneCommand = void 0;
 function doOneCommand(rover, plat, c) {
     switch (c) {
         case "L":
@@ -44,3 +34,13 @@ function doOneCommand(rover, plat, c) {
     return [rover.x, rover.y, rover.direction];
 }
 exports.doOneCommand = doOneCommand;
+function executeInstructions(rover, plat, command, action) {
+    if (action === void 0) { action = null; }
+    for (var _i = 0, command_1 = command; _i < command_1.length; _i++) {
+        var c = command_1[_i];
+        doOneCommand(rover, plat, c);
+        if (action != null)
+            action();
+    }
+}
+exports.executeInstructions = executeInstructions;
