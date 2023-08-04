@@ -34,7 +34,7 @@ and visa versa
 
 TO DO
 =========
-DO not allow rover been placed at same position as other rover 
+Do not allow rover to be placed at same position as other rovers
 
 Show other rovers on map
 

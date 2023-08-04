@@ -127,7 +127,7 @@ export function printMap(px:number, py:number, width:number, height:number) {
 			if((y == py) && ( px == x))
 				process.stdout.write("X")
 			else
-				process.stdout.write("⬛")
+				process.stdout.write("⬛") // ⬛
 		}
 		console.log(" ")// for newline
 			

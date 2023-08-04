@@ -92,7 +92,7 @@ function printMap(px, py, width, height) {
             if ((y == py) && (px == x))
                 process.stdout.write("X");
             else
-                process.stdout.write("⬛");
+                process.stdout.write("⬛"); // ⬛
         }
         console.log(" "); // for newline
     }
