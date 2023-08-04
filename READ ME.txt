@@ -7,7 +7,7 @@ Invalid input causes same prompt again in infinite loop until get correct input
 	input must be two numbers
 
 2)Program takes initial location for rover as two ints and direction eg "3 3 N"
-	input must be two numbers and "N", "S", "E", "W" for direction
+	input must be two numbers and "N", "S", "E", "W" for direction, small caps allowed
 
 3)Program takes input of movement instructions eg : "mmllmmllllmmm"
 	no spaces and characters must be "L", "R", "M" . Small caps allowed
@@ -20,7 +20,8 @@ Invalid input causes same prompt again in infinite loop until get correct input
 5)Return to step 2 for next rover
 
 
-
+THINGS TO WATCH OUT FOR
+===========================
 
 A 5 by 5 plateau is 0 to 5, so 5 is a valid coordinate in 5 by 5 plateau
 
@@ -29,3 +30,14 @@ Map coordinates are inverted on y, 0 is bottom row , top row is plateau height
 If rover goes off edge it wraps around, so go off top wraps to bottom, go off left wraps to right
 and visa versa
 
+
+
+TO DO
+=========
+DO not allow rover been placed at same position as other rover 
+
+Show other rovers on map
+
+Do not allow collisons between rovers
+
+Rovers can be blocked by obstacles
