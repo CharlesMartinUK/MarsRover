@@ -40,6 +40,6 @@ while(true) { // loop for each rover
 		sleep(1000)
 	}			)
 		
-		//console.log("Rover End Position and direction",rover.x," ", rover.y," ", rover.direction)
+	//console.log("Rover End Position and direction",rover.x," ", rover.y," ", rover.direction)
 }
 	
