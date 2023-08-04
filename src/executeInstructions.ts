@@ -2,16 +2,6 @@
 import {Rover} from "./rover"
 import {Plateau } from "./plateau"
 
-export function executeInstructions(rover:Rover, plat:Plateau, command:string, action:Function = null) {
-	
-	for(let c of command) {
-			
-		doOneCommand(rover,plat,c)
-			
-		if(action != null) action ()
-	}
-	
-}
 
 export function doOneCommand(rover:Rover, plat:Plateau,c:string) {
 	
@@ -44,4 +34,16 @@ export function doOneCommand(rover:Rover, plat:Plateau,c:string) {
 	}
 	
 	return [rover.x, rover.y, rover.direction]
+}
+
+
+export function executeInstructions(rover:Rover, plat:Plateau, command:string, action:Function = null) {
+	
+	for(let c of command) {
+			
+		doOneCommand(rover,plat,c)
+			
+		if(action != null) action ()
+	}
+	
 }
