@@ -6,6 +6,7 @@ describe("test executeInstructions",() => {
 	
 	const plat = new Plateau(5, 5 )
 	
+	// TEST SPINNING
 	
 	test("try spinning right" ,()=>  {
 		const rover = new Rover(0, 0,"N" )
@@ -25,6 +26,8 @@ describe("test executeInstructions",() => {
 		expect( doOneCommand(rover, plat,"L")  ).toEqual([0,0,"N"])
 	}),
 	
+	
+	// TEST MOVING
 	
 	test("try moving east" ,()=>  {
 		const rover = new Rover(3, 3,"E" )
@@ -47,6 +50,7 @@ describe("test executeInstructions",() => {
 	}),
 	
 	
+	// TEST WRAP
 	
 	test("try bottom wrap" ,()=>  {
 		const rover = new Rover(0, 0,"S" )
