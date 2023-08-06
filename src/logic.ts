@@ -36,9 +36,6 @@ export function movementsOnly(s:string){
 }
 
 
-
-
-
 export const prompt = require('prompt-sync')();
 
 
@@ -84,9 +81,6 @@ export function validateList(sv:string[], val:string ){
 export function input(message:string, numP:number, tester:Function ) : (number | string)[] {
 	
 	//console.log(val)
-	
-	
-	
 	let r : (number | string)[] = []
 	
 
