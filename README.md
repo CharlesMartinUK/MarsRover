@@ -1,6 +1,6 @@
 
 
-#Mars Rover Tech Task
+# Mars Rover Tech Task
 
 
 
@@ -21,7 +21,7 @@
 1. Return to step 2 for next rover
 
 
-##THINGS TO WATCH OUT FOR
+## THINGS TO WATCH OUT FOR
 
 
 Invalid input causes same prompt again in infinite loop until get correct input
@@ -35,7 +35,7 @@ and visa versa
 
 
 
-##TO DO
+## TO DO
 
 Do not allow rover to be placed at same position as other rovers
 
