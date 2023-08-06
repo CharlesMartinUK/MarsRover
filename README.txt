@@ -1,10 +1,7 @@
 
 
 Mars Rover Tech Task
-
-
-Invalid input causes same prompt again in infinite loop until get correct input
-
+=========================
 
 
 1)Program takes size of plateau as two space separate numbers eg "5 5"
@@ -26,6 +23,8 @@ Invalid input causes same prompt again in infinite loop until get correct input
 
 THINGS TO WATCH OUT FOR
 ===========================
+
+Invalid input causes same prompt again in infinite loop until get correct input
 
 A 5 by 5 plateau is 0 to 5, so 5 is a valid coordinate in 5 by 5 plateau
 
