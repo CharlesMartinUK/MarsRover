@@ -1,28 +1,28 @@
 
 
-Mars Rover Tech Task
-=========================
+#Mars Rover Tech Task
 
 
-1)Program takes size of plateau as two space separate numbers eg "5 5"
+
+1. Program takes size of plateau as two space separate numbers eg "5 5"
 	input must be two numbers
 
-2)Program takes initial location for rover as two ints and direction eg "3 3 N"
+1. Program takes initial location for rover as two ints and direction eg "3 3 N"
 	input must be two numbers and "N", "S", "E", "W" for direction, small caps allowed
 
-3)Program takes input of movement instructions eg : "mmllmmllllmmm"
+1. Program takes input of movement instructions eg : "mmllmmllllmmm"
 	no spaces and characters must be "L", "R", "M" . Small caps allowed
 
-4)Rover moves using movement instructions
+1. Rover moves using movement instructions
 	"L" rotates left
 	"R" rotates right
 	"M" moves in current facing direction
 
-5)Return to step 2 for next rover
+1. Return to step 2 for next rover
 
 
-THINGS TO WATCH OUT FOR
-===========================
+##THINGS TO WATCH OUT FOR
+
 
 Invalid input causes same prompt again in infinite loop until get correct input
 
@@ -35,8 +35,8 @@ and visa versa
 
 
 
-TO DO
-=========
+##TO DO
+
 Do not allow rover to be placed at same position as other rovers
 
 Show other rovers on map
